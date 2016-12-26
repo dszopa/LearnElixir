@@ -17,16 +17,11 @@
 
     def get_unit do
       IO.gets("What is the name of the unit you would like to convert? ")
-      # |> String.replace("\r", "")
-      # |> String.replace("\r", "")
       |> String.trim
     end
 
     def get_amount do
       IO.gets("How much of unit 1 do you have? ")
-      # |> String.replace("\r", "")
-      # |> String.replace("\n", "")
-      # TODO - dszopa 12/26/16 - apparently trim does ^
       |> String.trim
       |> String.to_integer
     end
